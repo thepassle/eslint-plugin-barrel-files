@@ -28,7 +28,7 @@
     "url": "https://github.com/thepassle/eslint-plugin-barrel-files"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "mocha": "^10.2.0"
   },
