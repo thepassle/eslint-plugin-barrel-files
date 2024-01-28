@@ -1,0 +1,24 @@
+## editors
+/.idea
+/.vscode
+*.iml
+
+## system files
+.DS_Store
+
+## dependencies
+/node_modules*
+/npm-debug.log
+
+## testing
+/coverage/
+
+## temp folders
+/.tmp/
+
+# build
+/_site/
+/dist/
+
+# generic logs
+*.log

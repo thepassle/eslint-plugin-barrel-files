@@ -1,0 +1,39 @@
+{
+  "name": "eslint-plugin-barrel-files",
+  "version": "1.0.2",
+  "description": "eslint plugin to avoid common errors with barrel files",
+  "main": "lib/index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm run test:node",
+    "test:node": "mocha tests --recursive",
+    "test:single": "mocha tests/lib/rules/avoid-barrel-files.js --watch"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "barrel",
+    "barrelfiles"
+  ],
+  "peerDependencies": {
+    "eslint": ">= 5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thepassle/eslint-plugin-barrel-files"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  },
+  "bundleDependencies": [],
+  "dependencies": {
+    "requireindex": "^1.2.0"
+  }
+}
