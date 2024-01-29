@@ -9,5 +9,5 @@ For more information, I recommend reading [Speeding up the JavaScript ecosystem 
 ## Supported Rules
 
 - [barrel-files/avoid-barrel-files](./docs/rules/avoid-barrel-files.md)
-- [barrel-files/avoid-namespace-imports](./docs/rules/avoid-namespace-imports.md)
+- [barrel-files/avoid-namespace-imports](./docs/rules/avoid-namespace-import.md)
 - [barrel-files/avoid-re-export-all](./docs/rules/avoid-re-export-all.md)
