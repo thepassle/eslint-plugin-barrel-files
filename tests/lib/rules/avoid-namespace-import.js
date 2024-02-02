@@ -15,6 +15,7 @@ const rule = require('../../../lib/rules/avoid-namespace-import.js');
 //------------------------------------------------------------------------------
 
 const ruleTester = new RuleTester({
+  // parser: require.resolve('@typescript-eslint/parser'),
   parserOptions: {
     sourceType: "module",
     ecmaVersion: "latest",
@@ -23,6 +24,8 @@ const ruleTester = new RuleTester({
 ruleTester.run('avoid-namespace-import', rule, {
   valid: [
     'import { foo } from "foo";',
+    // 'import type { foo } from "foo";',
+    // 'import type * as foo from "foo";'
   ],
 
   invalid: [

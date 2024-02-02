@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-barrel-files",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "eslint plugin to avoid common errors with barrel files",
   "main": "lib/index.js",
   "directories": {
@@ -11,7 +11,7 @@
   "scripts": {
     "test": "npm run test:node",
     "test:node": "mocha tests --recursive",
-    "test:single": "mocha tests/lib/rules/avoid-barrel-files.js --watch"
+    "test:single": "mocha tests/lib/rules/avoid-re-export-all.js --watch"
   },
   "keywords": [
     "eslint",
@@ -30,6 +30,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@typescript-eslint/parser": "^6.20.0",
     "mocha": "^10.2.0"
   },
   "bundleDependencies": [],

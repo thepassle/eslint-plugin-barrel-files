@@ -15,6 +15,7 @@ const rule = require('../../../lib/rules/avoid-re-export-all.js');
 //------------------------------------------------------------------------------
 
 const ruleTester = new RuleTester({
+  // parser: require.resolve('@typescript-eslint/parser'),
   parserOptions: {
     sourceType: "module",
     ecmaVersion: "latest",
@@ -22,6 +23,8 @@ const ruleTester = new RuleTester({
 });
 ruleTester.run('avoid-re-export-all', rule, {
   valid: [
+    // 'export type { foo } from "foo";',
+    // 'export type * as foo from "foo";',
     'export { foo } from "foo";',
     'export { foo as bar } from "foo";',
   ],
