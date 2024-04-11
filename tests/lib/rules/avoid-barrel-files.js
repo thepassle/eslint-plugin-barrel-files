@@ -51,6 +51,38 @@ ruleTester.run('avoid-barrel-files', rule, {
         let foo, bar, baz, qux, quux;
         export { foo, bar, baz, qux };
       `,
+    },
+    {
+      code: `
+        export default function Foo() {
+          return 'bar';
+        }
+      `,
+      options: [
+        {
+          amountOfExportsToConsiderModuleAsBarrel: 0,
+        },
+      ],
+    },
+    {
+      code: `
+        export default function bar() {}
+      `,
+      options: [
+        {
+          amountOfExportsToConsiderModuleAsBarrel: 0,
+        },
+      ],
+    },
+    {
+      code: `
+        export default defineFoo({});
+      `,
+      options: [
+        {
+          amountOfExportsToConsiderModuleAsBarrel: 0,
+        },
+      ],
     }
   ],
 
