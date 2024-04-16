@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-barrel-files",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "eslint plugin to avoid common errors with barrel files",
   "main": "lib/index.js",
   "directories": {
