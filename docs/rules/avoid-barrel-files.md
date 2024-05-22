@@ -2,7 +2,7 @@
 
 ## Rule Details
 
-This rule aims to...
+This rule disallows _authoring_ barrel files in your project.
 
 Examples of **incorrect** code for this rule:
 
