@@ -36,7 +36,7 @@
   },
   "bundleDependencies": [],
   "dependencies": {
-    "eslint-barrel-file-utils": "^0.0.9",
+    "eslint-barrel-file-utils": "^0.0.10",
     "requireindex": "^1.2.0"
   }
 }
