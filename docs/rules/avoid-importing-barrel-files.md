@@ -25,6 +25,7 @@ This rule takes an optional configuration:
         "amountOfExportsToConsiderModuleAsBarrel": 5,
         "exportConditions": ["node", "import"],
         "mainFields": ["module", "main", "browser"],
+        "extensions": [".js", ".ts", ".json", ".node"],
       }
     ]
   }
