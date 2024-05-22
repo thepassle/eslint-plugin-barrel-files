@@ -26,12 +26,29 @@ ruleTester.run('avoid-namespace-import', rule, {
     'import { foo } from "foo";',
     // 'import type { foo } from "foo";',
     // 'import type * as foo from "foo";'
+    {
+      code: 'import * as foo from "foo";',
+      options: [
+        {
+          allowList: ['foo'],
+        },
+      ],
+    },
   ],
 
   invalid: [
     {
       code: 'import * as foo from "foo";',
       errors: [{ message: 'Avoid namespace imports, it leads to unused imports and prevents treeshaking.' }],
+    },
+    {
+      code: 'import * as bar from "bar";',
+      errors: [{ message: 'Avoid namespace imports, it leads to unused imports and prevents treeshaking.' }],
+      options: [
+        {
+          allowList: ['foo'],
+        },
+      ],
     },
   ],
 });
