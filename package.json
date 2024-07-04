@@ -36,7 +36,8 @@
   },
   "bundleDependencies": [],
   "dependencies": {
-    "eslint-barrel-file-utils": "^0.0.10",
+    "eslint-barrel-file-utils": "^0.0.11",
+    "oxc-resolver": "^1.9.2",
     "requireindex": "^1.2.0"
   }
 }

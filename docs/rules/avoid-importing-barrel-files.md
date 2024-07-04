@@ -26,6 +26,34 @@ This rule takes an optional configuration:
         "exportConditions": ["node", "import"],
         "mainFields": ["module", "main", "browser"],
         "extensions": [".js", ".ts", ".json", ".node"],
+        "tsconfig": {
+          "configFile": "./tsconfig.json",
+          "references": []
+        }
+      }
+    ]
+  }
+}
+```
+
+### Path Aliases
+
+The rule can accept an `alias` option whose value can be an object that matches Webpack's [resolve.alias](https://webpack.js.org/configuration/resolve/) configuration.
+
+```js
+// .eslintrc.cjs
+const path = require('path')
+
+module.exports = {
+  // ...
+  "rules": {
+    "barrel-files/avoid-importing-barrel-files": [
+      2,
+      {
+        alias: {
+          // "@/foo/bar.js" => "./src/foo/bar.js"
+          "@": [path.resolve(".", "src")]
+        }
       }
     ]
   }
