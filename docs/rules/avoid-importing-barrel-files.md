@@ -21,6 +21,7 @@ This rule takes an optional configuration:
     "barrel-files/avoid-importing-barrel-files": [
       2,
       {
+        "allowList": ["foo"],
         "maxModuleGraphSizeAllowed": 40,
         "amountOfExportsToConsiderModuleAsBarrel": 5,
         "exportConditions": ["node", "import"],
