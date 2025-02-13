@@ -6,9 +6,8 @@
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
-
-const { RuleTester } = require('eslint');
-const rule = require('../../../lib/rules/avoid-namespace-import.js');
+import { RuleTester } from 'eslint';
+import rule from '../../../lib/rules/avoid-namespace-import.js';
 
 //------------------------------------------------------------------------------
 // Tests

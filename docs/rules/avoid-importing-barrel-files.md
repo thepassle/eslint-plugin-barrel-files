@@ -45,7 +45,7 @@ The rule can accept an `alias` option whose value can be an object that matches 
 // .eslintrc.cjs
 const path = require('path')
 
-module.exports = {
+export default {
   // ...
   "rules": {
     "barrel-files/avoid-importing-barrel-files": [

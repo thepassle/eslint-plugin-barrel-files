@@ -6,9 +6,9 @@
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
+import { RuleTester } from 'eslint';
+import rule from '../../../lib/rules/avoid-re-export-all.js';
 
-const { RuleTester } = require('eslint');
-const rule = require('../../../lib/rules/avoid-re-export-all.js');
 
 //------------------------------------------------------------------------------
 // Tests

@@ -7,8 +7,8 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-const { RuleTester } = require('eslint');
-const rule = require('../../../lib/rules/avoid-barrel-files.js');
+import { RuleTester } from 'eslint';
+import rule from '../../../lib/rules/avoid-barrel-files.js';
 
 //------------------------------------------------------------------------------
 // Tests

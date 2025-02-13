@@ -7,9 +7,9 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-const { RuleTester } = require('@typescript-eslint/rule-tester');
-const { after } = require('node:test');
-const rule = require('../../../lib/rules/avoid-barrel-files.js');
+import { RuleTester } from '@typescript-eslint/rule-tester';
+import { after } from 'node:test';
+import rule from '../../../lib/rules/avoid-barrel-files.js';
 
 RuleTester.afterAll = after;
 
