@@ -4,6 +4,10 @@ This project follows _Semantic Versioning_ (aka SemVer). Visit http://semver.org
 
 ## Release 3.0.0 (2025-02-13)
 
+- Actually export the plugin
+
+## Release 3.0.0 (2025-02-13)
+
 - Migrate to ESM and flatconfig format
 
 ## Release 1.0.0 (2024-01-05)
